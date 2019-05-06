@@ -44,7 +44,7 @@ public class Part03StepVerifierTest {
 
 	@Test
 	public void expect2ElementsThenError() {
-		workshop.expectFooBarError(Flux.just("foo", "bar").concatWith(Mono.error(new RuntimeException())));
+		workshop.expectFooBarError(Flux.just("woo", "bar").concatWith(Mono.error(new RuntimeException())));
 	}
 
 //========================================================================================
